@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Welcome!</title>
+        <link rel="stylesheet" type="text/css" href="static/css/style.css?q={{ time }}" />
+    </head>
+    <body>
+        <h1>Welcome to our Jeopardy game!</h1>
+        <p>Let's get started! Click the button below.</p>
+        <form method="post" action="/question">
+            <input type="submit" name="get_question" value = "Get Your Jeopardy Question!"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Your Jeopardy Question</title>
+        <link rel="stylesheet" type="text/css" href="static/css/style.css?q={{ time }}" />
+    </head>
+    <body>
+        <h1>Your Jeopardy Question</h1>
+        <p>{{random_question}}</p>
+        <form method="post" action="/answer">
+            <input type="text" name="user_input" value="Enter your guess"/>
+            <input type="submit" value = "Submit"/>
+        </form>
+    </body>
+</html>
